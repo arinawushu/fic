@@ -1,0 +1,81 @@
+C:\Users\Arina\anaconda3\envs\fic\python.exe C:/Users/Arina/Documents/food_image_classifier/main.py
+2021-12-13 21:26:55.056840: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2021-12-13 21:26:55.057359: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Hello Arina!
+User is Arina, Image size is 64 x 48, Classifier is 2
+loading a category: FOOD
+Category FOOD loaded
+loading a category: NONFOOD
+Category NONFOOD loaded
+All categories are loaded
+              0         1         2  ...      9214      9215  By category
+0      0.707598  0.778186  0.919118  ...  0.960784  0.980392            0
+1      0.858415  0.879902  0.966176  ...  0.555392  0.462582            0
+2      0.676634  0.764706  0.964951  ...  0.918301  0.973203            0
+3      0.855964  0.867484  0.965768  ...  0.328350  0.214461            0
+4      0.012010  0.025000  0.001471  ...  0.010539  0.000000            0
+...         ...       ...       ...  ...       ...       ...          ...
+16387  0.031373  0.067320  0.028105  ...  0.189951  0.097467            1
+16388  0.569690  0.544118  0.512500  ...  0.238235  0.001471            1
+16389  0.072631  0.023529  0.019608  ...  0.039216  0.027451            1
+16390  0.992157  0.943791  0.319853  ...  0.447059  0.086275            1
+16391  0.432843  0.342810  0.188399  ...  0.240523  0.211683            1
+
+[16392 rows x 9217 columns]
+Splitting is done
+[LibSVM].....................*.........*
+optimization finished, #iter = 30444
+obj = -13280.945605, rho = 1.825915
+nSV = 5417, nBSV = 0
+Total nSV = 5417
+....................*..........*
+optimization finished, #iter = 30546
+obj = -13300.251416, rho = 2.071939
+nSV = 5426, nBSV = 1
+Total nSV = 5426
+.....................*.........*
+optimization finished, #iter = 30838
+obj = -11507.976256, rho = 1.895841
+nSV = 5426, nBSV = 0
+Total nSV = 5426
+......................*.........*
+optimization finished, #iter = 31685
+obj = -13765.562740, rho = 1.971169
+nSV = 5519, nBSV = 0
+Total nSV = 5519
+....................*..........*
+optimization finished, #iter = 30768
+obj = -11424.192055, rho = 1.966174
+nSV = 5411, nBSV = 0
+Total nSV = 5411
+..........................*.............*
+optimization finished, #iter = 39160
+obj = -16705.361817, rho = -1.968827
+nSV = 6633, nBSV = 1
+Total nSV = 6633
+The model accuracy is 86.64226898444647%
+              precision    recall  f1-score   support
+
+           0       0.87      0.87      0.87      1662
+           1       0.86      0.87      0.86      1617
+
+    accuracy                           0.87      3279
+   macro avg       0.87      0.87      0.87      3279
+weighted avg       0.87      0.87      0.87      3279
+
+[[1440  222]
+ [ 216 1401]]
+Model is saved
+Accuracy:  86.64226898444647 Time elapsed:  4488.286887168884
+
+
+FOOD only
+The number of images associated to FOOD are 81 out of 121 ---> 66.94214876033058 %
+The number of images associated to NON_FOOD are 20 out of 121 ---> 16.528925619834713 %
+The number of unknown images are 20 out of 121 ---> 16.528925619834713 %
+
+NONFOOD only
+The number of images associated to FOOD are 12 out of 102 ---> 11.76470588235294 %
+The number of images associated to NON_FOOD are 83 out of 102 ---> 81.37254901960785 %
+The number of unknown images are 7 out of 102 ---> 6.862745098039216 %
+

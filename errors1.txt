@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "main.py", line 67, in <module>
+    main()
+  File "main.py", line 44, in main
+    pipl.classify(classifier, data_directory, project_directory, h, w, d)
+  File "/storage/homefs/as20f013/food_image_classifier/pipeline.py", line 34, in classify
+    accuracy, time_elapsed = cnn_cl.cnn_classifier(data_directory, project_directory, h, w, d)
+  File "/storage/homefs/as20f013/food_image_classifier/food_classifier.py", line 124, in cnn_classifier
+    print('Done in %0.3fs' % (time() - t0))
+TypeError: unsupported operand type(s) for -: 'datetime.time' and 'datetime.time'
