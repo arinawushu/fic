@@ -1,2 +1,0 @@
-# fic
-food image classifier
